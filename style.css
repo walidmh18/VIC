@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Odibee+Sans&family=Outfit:wght@100..900&display=swap');
+
+
+:root {
+   --bg: #131F28;
+   --d1: #0F1415;
+   --d2: #A3A5A7;
+
+   --l1: #ffffff;
+   --l2: #F8F8F8;
+
+   --g: #52BEC4;
+   --b: #2B95D4;
+
+
+}
+html{
+   scroll-behavior: smooth;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+
+}
+
+a,
+button {
+   all: unset;
+   cursor: pointer;
+}
+
+h1,
+h2,
+header a,
+header button {
+   font-family: 'Odibee Sans', sans-serif;
+
+}
+
+h3 {
+   font-family: 'Outfit', sans-serif;
+}
+
+p {
+   font-family: 'Inter', sans-serif;
+}
+
+ul li {
+   list-style-position: inside;
+   font-family: 'Outfit', sans-serif;
+
+}
+
+ul li::marker {
+   color: var(--g);
+   font-size: 1.5em;
+}
+
+
+body {
+   background: url(./public/back.svg);
+   background-repeat: repeat-y;
+   background-size: 100%;
+   /* min-width: 100vw; */
+   position: relative;
+}
+
+section ,footer{
+   max-width: 1440px;
+   margin: auto;
+}
+
+
+header {
+   padding: 1em;
+   height: 10vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 1440px;
+   margin: 2em auto;
+   z-index: 10000;
+   left: 50%;
+   transform: translateX(-50%);
+   position: absolute;
+   top: 0;
+}
+
+
+
+.rrrrContainer{
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   display: grid;
+   place-items: center;
+   top: 0;left: 0;
+   z-index: -444;
+
+}
+#rrrr{
+   position: fixed;
+   /* left: 50%; */
+   /* top: 50%; */
+   z-index: -10000;
+   width: 50vw;
+   max-height: 70vh;
+   /* transform: translate(-50%,-50%); */
+   opacity: 0.5;
+   transition: 0.2s;
+}
+
+header img {
+   max-height: 100%;
+}
+
+header nav {
+   display: flex;
+   gap: 1em;
+}
+
+header a {
+   color: var(--l2);
+   font-size: 1.6em;
+   text-transform: uppercase;
+   position: relative;
+   padding: 0.25em;
+}
+
+header a.active,
+header a:hover {
+   color: var(--b);
+   transition: 0.3s cubic-bezier(0, .82, .55, 1.01);
+
+}
+
+header a::after {
+   content: '';
+   width: 0;
+   position: absolute;
+   height: 3px;
+   border-radius: 100vmax;
+   background: var(--b);
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   transition: 0.3s cubic-bezier(0, .82, .55, 1.01);
+}
+
+header a.active::after,
+header a:hover::after {
+   width: 110%;
+
+}
+
+
+header button {
+   padding: 0.5em 1em;
+   border: 1px solid var(--b);
+   color: var(--b);
+   font-size: 1.6em;
+   transition: 0.3s cubic-bezier(0, .82, .55, 1.01);
+}
+
+header button:hover {
+   background: var(--b);
+   color: var(--bg);
+}
+
+
+header img {
+   margin-left: 2em;
+}
+
+#header-desk-dynamic {
+   
+   background: rgba(43, 149, 212, 0.06);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+   position: fixed;
+   top: -15vh;
+   width: 1440px;
+   /* margin: 2em; */
+   left: 50%;
+   transform: translateX(-50%);
+   transition: 0.3s cubic-bezier(0, .82, .75, 1.01);
+
+
+}
+
+#header-desk-dynamic.active{
+   top: 0;
+}
+
+#hero {
+   display: grid;
+   place-items: center;
+   height: 100dvh;
+   width: 100%;
+}
+
+#hero .text {
+   display: grid;
+   place-items: center;
+
+}
+
+
+#hero h1 {
+   font-size: 9em;
+   color: var(--l2);
+   font-weight: 500;
+
+}
+
+#hero h1 span {
+   background: -webkit-linear-gradient(-45deg, var(--b), var(--g), var(--b), var(--g));
+   background-size: 400% 400%;
+   animation: gradient 5s ease infinite;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#hero h1 span span {
+   font-weight: 600;
+
+}
+
+@keyframes gradient {
+   0% {
+      background-position: 0% 50%;
+   }
+
+   50% {
+      background-position: 100% 50%;
+   }
+
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
+
+
+
+.descriptionSec {
+   display: flex;
+   align-items: center;
+   gap: 6em;
+   font-size: 1.2em;
+   margin: 20vh auto;
+
+}
+
+.left .imagesContainer {
+   display: flex;
+   align-items: center;
+   gap: 2em;
+
+}
+
+.left .imagesContainer .leftImage img {
+   aspect-ratio: 4/6;
+}
+
+
+.left .imagesContainer .rightImages {
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
+.left .imagesContainer .rightImages img {
+   aspect-ratio: 1/1;
+}
+
+
+.left .imagesContainer img {
+   max-width: 300px;
+   object-fit: cover;
+   border-radius: 1em;
+}
+
+.descriptionSec h3 {
+   background: -webkit-linear-gradient(-45deg, var(--b), var(--g), var(--b), var(--g));
+   background-size: 400% 400%;
+   animation: gradient 5s ease infinite;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-bottom: 1em;
+   font-size: 2.1em;
+
+}
+
+.descriptionSec p {
+   color: var(--l2);
+   font-family: 'Outfit', sans-serif;
+   margin-bottom: 2em;
+   font-size: 1.25em;
+}
+
+.descriptionSec li {
+   color: var(--l2);
+   font-size: 1.25em;
+}
+
+
+#faq {
+   background: var(--l2);
+   border-radius: 2em;
+   padding: 2em;
+   text-align: center;
+   margin: 20vh auto;
+
+}
+
+
+.bfaq {
+   background: -webkit-linear-gradient(-45deg, var(--b), var(--g), var(--b), var(--g));
+   background-size: 400% 400%;
+   animation: gradient 5s ease infinite;
+   color: var(--l2);
+   border-radius: 100vmax;
+   padding: 0.7em;
+   display: inline-block;
+   font-size: 0.9em;
+   margin-bottom: 1em;
+}
+
+#faq p.title {
+   font-size: 4em;
+}
+
+#faq p {
+   max-width: 50%;
+   margin: auto;
+}
+
+#faq p:not(.bfaq, .title, .question, .question p) {
+
+   font-size: 1.5em;
+}
+
+
+.faqContainer {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   width: 100%;
+   gap: 2em;
+   padding: 4em 2em 1em;
+   position: relative;
+}
+
+.faqContainer .question .container {
+   display: flex;
+   justify-content: space-between;
+   transition: 0.3s;
+   align-items: center;
+   
+}
+
+.faqContainer .question {
+   background: var(--l1);
+
+   border-radius: 1em;
+   padding: 1em 1.5em;
+   cursor: pointer;
+   box-shadow: 0px 5px 10px #131F2820;
+   overflow: hidden;
+   transition: 0.5s cubic-bezier(0, .82, .55, 1.01);
+   margin: 0;
+   position: relative;
+   font-size: 0.9em;
+}
+
+#faq .faqContainer p {
+   margin: 0;
+   max-width: unset;
+   font-size: 1.25em;
+}
+
+.faqContainer .question .answer {
+   /* position: absolute; */
+   display: none;
+   opacity: 0;
+   width: 100%;
+   transition: 0.3s cubic-bezier(0, .82, .55, 1.01);
+   text-align: left;
+   color: #333333;
+   margin-top: 1em;
+
+}
+
+.faqContainer .question.active .answer {
+   display: block;
+}
+.faqContainer .question.active {
+   position: absolute;
+   
+   margin: 4em 2em 1em;
+   z-index: 100;
+   /* animation : animmmm 3s cubic-bezier(0, .82, .55, 1.01) forwards; */
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   inset: 0 !important;
+
+}
+
+
+#cta{
+   background: -webkit-linear-gradient(-45deg, var(--b), var(--g), var(--b), var(--g));
+   background-size: 400% 400%;
+   animation: gradient 15s ease infinite;
+   padding: 4em 2em;
+   color: var(--l2);
+   text-align: center;
+   border-radius: 1em;
+   margin: 20vh auto;
+   border: 1px solid var(--b);
+}
+
+#cta h3{
+   font-size: 2.5em;
+   margin-bottom: 1em;
+}
+
+#cta a{
+   background: var(--l2);
+   font-family:'Outfit',sans-serif;
+   color: var(--b);
+   font-size: 1.4em;
+   padding: 0.5em 1em;
+   display: inline-block;
+   border-radius: 5px;
+}
+
+footer{
+   padding-top: 20vh;
+   color: var(--l2);
+   font-family: 'Inter', sans-serif;
+   /* margin-bottom: 20vh; */
+}
+
+
+footer .top{
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid var(--l2);
+   padding-bottom: 3em;
+   margin-bottom: 3em;
+
+}
+
+footer .top .right{
+   display: flex;
+   gap: 3em;
+}
+
+footer .top .right>a, footer .top .right div a:first-child {
+   font-weight: 600;
+   font-size: 1.2em;
+}
+
+footer .top .right div{
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
+
+
+footer .social{
+   display: flex;
+   gap: 1em;
+   margin-top: 1em;
+   font-size: 2em;
+}
+footer .bottom{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 4em;
+   /* gap: 3em; */
+}
+/* footer img{
+   max-width: 00px;
+} */
+

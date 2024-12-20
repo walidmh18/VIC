@@ -1,0 +1,45 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="70" height="70" fill="#F5F5F5"/>
+<g id="1920 Version">
+<path d="M-1854 -5378C-1854 -5379.1 -1853.1 -5380 -1852 -5380H16301C16302.1 -5380 16303 -5379.1 16303 -5378V5175C16303 5176.1 16302.1 5177 16301 5177H-1852C-1853.1 5177 -1854 5176.1 -1854 5175V-5378Z" fill="#42ADCB" fill-opacity="0.54"/>
+<path d="M-1852 -5379H16301V-5381H-1852V-5379ZM16302 -5378V5175H16304V-5378H16302ZM16301 5176H-1852V5178H16301V5176ZM-1853 5175V-5378H-1855V5175H-1853ZM-1852 5176C-1852.55 5176 -1853 5175.55 -1853 5175H-1855C-1855 5176.66 -1853.66 5178 -1852 5178V5176ZM16302 5175C16302 5175.55 16301.6 5176 16301 5176V5178C16302.7 5178 16304 5176.66 16304 5175H16302ZM16301 -5379C16301.6 -5379 16302 -5378.55 16302 -5378H16304C16304 -5379.66 16302.7 -5381 16301 -5381V-5379ZM-1852 -5381C-1853.66 -5381 -1855 -5379.66 -1855 -5378H-1853C-1853 -5378.55 -1852.55 -5379 -1852 -5379V-5381Z" fill="black" fill-opacity="0.1"/>
+<g id="Home" clip-path="url(#clip0_19_1248)">
+<rect width="1920" height="4470" transform="translate(-158 -4148)" fill="white"/>
+<g id="Footer" clip-path="url(#clip1_19_1248)">
+<rect width="1920" height="589" transform="translate(-158 -267)" fill="#131F28"/>
+<g id="star-bg 2" clip-path="url(#clip2_19_1248)">
+<g id="Group">
+</g>
+</g>
+<g id="Frame 1000002223">
+<g id="Socmed/Facebook">
+<g id="Ellipse 176" filter="url(#filter0_d_19_1248)">
+<circle cx="34.7999" cy="21.7999" r="16.7999" fill="#1A202C"/>
+</g>
+<path id="Vector" d="M34.8 5C25.5215 5 18 12.5215 18 21.8C18 31.0785 25.5215 38.6 34.8 38.6C44.0785 38.6 51.6 31.0785 51.6 21.8C51.6 12.5215 44.0785 5 34.8 5ZM38.7795 16.6095H36.2543C35.955 16.6095 35.6225 17.0033 35.6225 17.5265V19.35H38.7813L38.3035 21.9505H35.6225V29.7573H32.6423V21.9505H29.9385V19.35H32.6423V17.8205C32.6423 15.626 34.1648 13.8428 36.2543 13.8428H38.7795V16.6095Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_19_1248" x="0" y="0" width="69.5996" height="69.5999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="13"/>
+<feGaussianBlur stdDeviation="9"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0658854 0 0 0 0 0.0730469 0 0 0 0 0.1375 0 0 0 0.08 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_19_1248"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_1248" result="shape"/>
+</filter>
+<clipPath id="clip0_19_1248">
+<rect width="1920" height="4470" fill="white" transform="translate(-158 -4148)"/>
+</clipPath>
+<clipPath id="clip1_19_1248">
+<rect width="1920" height="589" fill="white" transform="translate(-158 -267)"/>
+</clipPath>
+<clipPath id="clip2_19_1248">
+<rect width="1917" height="1443" fill="white" transform="translate(-158 -270)"/>
+</clipPath>
+</defs>
+</svg>
