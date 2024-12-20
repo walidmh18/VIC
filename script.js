@@ -45,6 +45,7 @@ function openQuestion(q, ani, i) {
    
    let empty = document.createElement('div')
    q.after(empty)
+   empty.style.height = height+'px'
    q.style.position = 'absolute'
    q.style.top = offt + 'px'
    q.style.right = offr + 'px'
@@ -79,17 +80,31 @@ function closeQuestion(q, ani, i) {
 
 const screenHeight = screen.height
 const headerDeskDynamic = document.querySelector('#header-desk-dynamic')
+const headerMobDynamic = document.querySelector('#header-mob-dynamic')
 const rrrr = document.querySelector('#rrrr')
 const wltv = document.querySelector('#hero .text')
 const description = document.querySelector('#description-desk')
 addEventListener('scroll',() => {
    let y = scrollY;
    // console.log(y);
+   if(navStatus == 1){
+      document.querySelectorAll('.navmobiletop').forEach(q=>{
+
+         if (q.parentElement.classList.contains('open')) {
+            
+            toggleNav(q)
+         }
+      })
+   }
    if (y > screenHeight*0.7) {
       headerDeskDynamic.classList.add('active')
+      headerMobDynamic.classList.add('active')
       rrrr.style.opacity = 0;
+
+
    } else {
       headerDeskDynamic.classList.remove('active')
+      headerMobDynamic.classList.remove('active')
 
       let scale = 20 * y /(1*screenHeight);
       // let trans = (33.3/screenHeight)*y -50
@@ -102,3 +117,46 @@ addEventListener('scroll',() => {
    // wltv.style.transform = `translateY(${trans}%)`
 
 })
+
+
+const ocanimf = document.querySelector('.ocanimf')
+const ocanimd = document.querySelector('.ocanimd')
+
+let navanim1 = lottie.loadAnimation({
+   container: ocanimf,
+   renderer: 'svg',
+   loop: false,
+   autoplay: false,
+   path: './public/menu/menuV2.json' // the path to the animation json
+});
+
+let navanim2 = lottie.loadAnimation({
+   container: ocanimd,
+   renderer: 'svg',
+   loop: false,
+   autoplay: false,
+   path: './public/menu/menuV2.json' // the path to the animation json
+});
+
+let navStatus = 0
+function toggleNav(p){
+   
+   if (navStatus == 0) {
+      navanim1.setDirection(1)
+      navanim1.play()
+      navanim2.setDirection(1)
+      navanim2.play()
+      navStatus = 1
+   p.parentElement.classList.add('open')
+} else {
+      navanim1.setDirection(-1)
+      navanim1.play()
+      navanim2.setDirection(-1)
+      navanim2.play()
+      navStatus = 0
+   p.parentElement.classList.remove('open')
+}
+
+   // p.parentElement.classList.add('open')
+   // console.log(p.classList);
+}

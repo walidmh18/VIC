@@ -16,9 +16,10 @@
 <body>
 
    <header id="header-desk-dynamic">
-      <img src="./public/header-logo.svg" alt="">
+      <a href="./"><img src="./public/header-logo.svg" alt=""></a>
+
       <nav>
-         <a href="#">home</a>
+         <a href="#" class="active">home</a>
          <a href="./about">about</a>
          <a href="./comunity">comunity</a>
          <a href="./events">events</a>
@@ -27,15 +28,51 @@
       <button>explore more</button>
    </header>
    <header id="header-desk-fix">
-      <img src="./public/header-logo.svg" alt="">
+      <a href="./"><img src="./public/header-logo.svg" alt=""></a>
+
       <nav>
-         <a href="#">home</a>
+         <a href="#" class="active">home</a>
          <a href="./about">about</a>
          <a href="./comunity">comunity</a>
          <a href="./events">events</a>
          <a href="./contact">contact us</a>
       </nav>
       <button>explore more</button>
+   </header>
+
+   <header id="header-mob-fix" class="">
+      <div class="navmobiletop">
+         <a href="./"><img src="./public/header-logo.svg" alt=""></a>
+         <div class="ocanimf" onclick="toggleNav(this.parentElement)">
+
+         </div>
+      </div>
+      <nav>
+         <a href="#" class="active">home</a>
+         <a href="./about">about</a>
+         <a href="./comunity">comunity</a>
+         <a href="./events">events</a>
+         <a href="./contact">contact us</a>
+         <button>explore more</button>
+      </nav>
+   </header>
+
+   <header id="header-mob-dynamic">
+      <div class="navmobiletop">
+         <a href="./"><img src="./public/header-logo.svg" alt=""></a>
+         <div class="ocanimd" onclick="toggleNav(this.parentElement)">
+   
+         </div>
+
+      </div>
+      <nav>
+         <a href="#" class="active">home</a>
+         <a href="./about">about</a>
+         <a href="./comunity">comunity</a>
+         <a href="./events">events</a>
+         <a href="./contact">contact us</a>
+         <button>explore more</button>
+      </nav>
    </header>
 
 
@@ -48,7 +85,48 @@
    </section>
 
    <section id="description-desk" class="descriptionSec">
-      <div class="left">
+      <div class="left leftDesk">
+         <div class="imagesContainer">
+            <div class="leftImage">
+               <img src="./public/home1.jpg" alt="">
+            </div>
+            <div class="rightImages">
+               <img src="./public/home1.jpg" alt="">
+               <img src="./public/home1.jpg" alt="">
+            </div>
+         </div>
+
+      </div>
+      <div class="left leftTab">
+         <div class="imagesContainer">
+
+            <img src="./public/home1.jpg" alt="">
+
+            <img src="./public/home1.jpg" alt="">
+            <img src="./public/home1.jpg" alt="">
+
+         </div>
+
+      </div>
+
+      <div class="right">
+         <h3 class="title">A creative hub where ideas come to life and possibilities are endless!</h3>
+         <p class="text">
+            VIC is a dynamic community built around the passion for innovation and forward-thinking. We bring together individuals who are eager to explore new ideas and revolutionize the way we approach problems. We aim to:
+         </p>
+         <ul>
+            <li>Drive innovation through workshops and projects.</li>
+            <li>Foster collaboration and networking.</li>
+            <li>Support turning ideas into reality.</li>
+         </ul>
+      </div>
+
+   </section>
+
+   <section id="description-mob" class="descriptionSec">
+      <h3 class="title">A creative hub where ideas come to life and possibilities are endless!</h3>
+
+      <div class="left leftDesk">
          <div class="imagesContainer">
             <div class="leftImage">
                <img src="./public/home1.jpg" alt="">
@@ -62,7 +140,6 @@
       </div>
 
       <div class="right">
-         <h3 class="title">A creative hub where ideas come to life and possibilities are endless!</h3>
          <p class="text">
             VIC is a dynamic community built around the passion for innovation and forward-thinking. We bring together individuals who are eager to explore new ideas and revolutionize the way we approach problems. We aim to:
          </p>
@@ -193,12 +270,12 @@
       <img id="rrrr" src="./public/logo stroke.svg" alt="">
 
    </div>
-
+   
 
    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
    <script>
       const lenis = new Lenis({
-         duration: 0.8,
+         duration: 0.6,
          easing: (t) => Math.min(1, 1.000001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
          direction: 'vertical', // vertical, horizontal
          gestureDirection: 'vertical', // vertical, horizontal, both
