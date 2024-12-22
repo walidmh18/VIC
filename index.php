@@ -63,7 +63,7 @@
       <div class="navmobiletop">
          <a href="./"><img src="./public/mobile-header-logo.svg" alt=""></a>
          <div class="ocanimd" onclick="toggleNav(this.parentElement)">
-   
+
          </div>
 
       </div>
@@ -242,28 +242,28 @@
          <div class="left">
             <img src="./public/footer-logo.svg" alt="">
             <div class="social">
-               <a href=""><i class="fa-brands fa-instagram"></i></a>
-               <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-               <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+               <a href="https://www.instagram.com/vic.enp/"><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://www.facebook.com/vic.enpa"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="https://www.linkedin.com/in/vic-enp/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
          </div>
          <div class="right">
-            <a href="">About us</a>
+            <a href="./about">About us</a>
             <div>
-               <a href="">Community</a>
-               <a href="">members</a>
-               <a href="">Testimonials</a>
+               <a href="./comunity">Community</a>
+               <a href="./comunity/members">members</a>
+               <a href="./comunity/testimonials">Testimonials</a>
             </div>
-            <a href="">Events</a>
-            <a href="">Contact Us</a>
+            <a href="./events">Events</a>
+            <a href="./contact">Contact Us</a>
          </div>
 
       </div>
       <div class="bottom">
          <p>&#169; VIC ENP. All rights reserved</p>
          <div style="display:flex; gap:3em;">
-            <a href="">Privacy & Policy</a>
-            <a href="">Terms & Conditions</a>
+            <a href="./policy">Privacy & Policy</a>
+            <a href="./conditions">Terms & Conditions</a>
          </div>
       </div>
    </footer>
@@ -272,7 +272,7 @@
       <img id="rrrr" src="./public/logo stroke.svg" alt="">
 
    </div>
-   
+
 
    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
    <script>

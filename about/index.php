@@ -119,7 +119,7 @@ include'../footer.php';
 
    </div>
    
-<!-- 
+
    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
    <script>
       const lenis = new Lenis({
@@ -155,7 +155,7 @@ include'../footer.php';
          requestAnimationFrame(raf)
       }
       requestAnimationFrame(raf)
-   </script> -->
+   </script>
 </body>
 
 </html>
