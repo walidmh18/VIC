@@ -178,7 +178,7 @@ ScrollReveal().reveal('.left img',{reset:true,origin:'bottom',distance:'4em',opa
 
 ScrollReveal().reveal('#faq',{reset:true,origin:'bottom',distance:'4em',opacity:0});
 ScrollReveal().reveal('#faq .question',{reset:true,origin:'bottom',distance:'4em',opacity:0,delay:100});
-ScrollReveal().reveal('#faq p',{reset:true,origin:'bottom',distance:'1em',opacity:0,delay:20});
+ScrollReveal().reveal('#faq p:not(.answer p)',{reset:true,origin:'bottom',distance:'1em',opacity:0,delay:20});
 
 
 ScrollReveal().reveal('#cta',{reset:true,origin:'bottom',distance:'4em',opacity:0});
