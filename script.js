@@ -78,6 +78,7 @@ function closeQuestion(q, ani, i) {
 }
 
 
+
 const screenHeight = screen.height
 const headerDeskDynamic = document.querySelector('#header-desk-dynamic')
 const headerMobDynamic = document.querySelector('#header-mob-dynamic')
@@ -100,11 +101,13 @@ addEventListener('scroll',() => {
       headerDeskDynamic.classList.add('active')
       headerMobDynamic.classList.add('active')
       rrrr.style.opacity = 0;
+      document.querySelector('.rrrrContainer').style.opacity = 0
 
 
    } else {
       headerDeskDynamic.classList.remove('active')
       headerMobDynamic.classList.remove('active')
+      document.querySelector('.rrrrContainer').style.opacity = 1
 
       let scale = 20 * y /(1*screenHeight);
       // let trans = (33.3/screenHeight)*y -50
@@ -118,6 +121,9 @@ addEventListener('scroll',() => {
 
 })
 
+if (scrollY < screenHeight*0.7) {
+   document.querySelector('.rrrrContainer').style.opacity = 1
+}
 
 const ocanimf = document.querySelector('.ocanimf')
 const ocanimd = document.querySelector('.ocanimd')
@@ -154,9 +160,25 @@ function toggleNav(p){
       navanim2.setDirection(-1)
       navanim2.play()
       navStatus = 0
-   p.parentElement.classList.remove('open')
+      p.parentElement.classList.remove('open')
 }
 
    // p.parentElement.classList.add('open')
    // console.log(p.classList);
 }
+
+
+
+ScrollReveal().reveal('.rrrrContainer');
+ScrollReveal().reveal('.descriptionSec h3',{reset:true,origin:'bottom',distance:'4em',opacity:0});
+ScrollReveal().reveal('.descriptionSec p',{reset:true,origin:'bottom',distance:'4em',opacity:0});
+ScrollReveal().reveal('.descriptionSec li',{reset:true,origin:'bottom',distance:'4em',opacity:0});
+ScrollReveal().reveal('.left img',{reset:true,origin:'bottom',distance:'4em',opacity:0,delay:150});
+
+
+ScrollReveal().reveal('#faq',{reset:true,origin:'bottom',distance:'4em',opacity:0});
+ScrollReveal().reveal('#faq .question',{reset:true,origin:'bottom',distance:'4em',opacity:0,delay:100});
+ScrollReveal().reveal('#faq p',{reset:true,origin:'bottom',distance:'1em',opacity:0,delay:20});
+
+
+ScrollReveal().reveal('#cta',{reset:true,origin:'bottom',distance:'4em',opacity:0});

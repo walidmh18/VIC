@@ -11,6 +11,8 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.1/lottie.min.js" integrity="sha512-H6aKTjvYAazW0iNuGj1f2dZvSWlt1HGZGEDsXRPETo2IB4H6v36Vl2qiZNlCRxOp0kT7iBf+7USNPavNscZGAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+   <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body>
@@ -42,7 +44,7 @@
 
    <header id="header-mob-fix" class="">
       <div class="navmobiletop">
-         <a href="./"><img src="./public/header-logo.svg" alt=""></a>
+         <a href="./"><img src="./public/mobile-header-logo.svg" alt=""></a>
          <div class="ocanimf" onclick="toggleNav(this.parentElement)">
 
          </div>
@@ -59,7 +61,7 @@
 
    <header id="header-mob-dynamic">
       <div class="navmobiletop">
-         <a href="./"><img src="./public/header-logo.svg" alt=""></a>
+         <a href="./"><img src="./public/mobile-header-logo.svg" alt=""></a>
          <div class="ocanimd" onclick="toggleNav(this.parentElement)">
    
          </div>
@@ -238,7 +240,7 @@
    <footer>
       <div class="top">
          <div class="left">
-            <img src="./public/header-logo.svg" alt="">
+            <img src="./public/footer-logo.svg" alt="">
             <div class="social">
                <a href=""><i class="fa-brands fa-instagram"></i></a>
                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
