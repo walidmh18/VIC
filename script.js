@@ -173,7 +173,7 @@ ScrollReveal().reveal('.rrrrContainer');
 ScrollReveal().reveal('.descriptionSec h3',{reset:true,origin:'bottom',distance:'4em',opacity:0});
 ScrollReveal().reveal('.descriptionSec p',{reset:true,origin:'bottom',distance:'4em',opacity:0});
 ScrollReveal().reveal('.descriptionSec li',{reset:true,origin:'bottom',distance:'4em',opacity:0});
-ScrollReveal().reveal('.left img',{reset:true,origin:'bottom',distance:'4em',opacity:0,delay:150});
+ScrollReveal().reveal('.left .imageContainer',{reset:true,origin:'bottom',distance:'4em',opacity:0,delay:150});
 
 
 ScrollReveal().reveal('#faq',{reset:true,origin:'bottom',distance:'4em',opacity:0});
@@ -182,3 +182,85 @@ ScrollReveal().reveal('#faq p:not(.answer p)',{reset:true,origin:'bottom',distan
 
 
 ScrollReveal().reveal('#cta',{reset:true,origin:'bottom',distance:'4em',opacity:0});
+ScrollReveal().reveal('.tag-list h1',{reset:true,origin:'bottom',distance:'4em',opacity:0});
+ScrollReveal().reveal('.loop-slider',{reset:true,origin:'bottom',distance:'4em',opacity:0});
+
+
+
+
+let image_11 = document.querySelector('#description-desk .leftDesk .leftImage .imageContainer')
+let image_12 = document.querySelector('#description-desk .leftTab .imageContainer:first-child')
+let image_13 = document.querySelector('#description-mob .leftImage .imageContainer')
+
+
+let image_21 = document.querySelector('#description-desk .leftDesk .rightImages .imageContainer:nth-child(1)')
+let image_22 = document.querySelector('#description-desk .leftTab .imageContainer:nth-child(2)')
+let image_23 = document.querySelector('#description-mob .leftDesk .rightImages .imageContainer:nth-child(1)')
+
+
+
+let image_31 = document.querySelector('#description-desk .leftDesk .rightImages .imageContainer:nth-child(2)')
+let image_32 = document.querySelector('#description-desk .leftTab .imageContainer:nth-child(3)')
+let image_33 = document.querySelector('#description-mob .leftDesk .rightImages .imageContainer:nth-child(2)')
+
+
+// image_11.style.backgroundImage = 'lkajsdlf'
+
+let n = 2;
+const transitionDuration = 7000
+const transitionStart = 200
+const transitionEnd = transitionDuration - transitionStart;
+
+[image_11,image_12,image_13,image_21,image_22,image_23,image_31,image_32,image_33].forEach(img=>{
+
+   setTimeout(() => {
+      img.classList.add('transitioning-src')
+   }, transitionEnd);
+})
+
+setInterval(() => {
+   // console.log(image_11);
+   if (3*n>=47) {
+      n=1
+   }
+   
+   [image_11,image_12,image_13].forEach(img=>{
+      
+      setTimeout(() => {
+         img.classList.remove('transitioning-src')
+      }, transitionStart);
+
+      img.style.backgroundImage = `url("./public/images/ (${3*n}).jpg")`
+      
+      setTimeout(() => {
+         img.classList.add('transitioning-src')
+      }, transitionEnd);
+   });
+   
+   [image_21,image_22,image_23].forEach(img=>{
+      
+      setTimeout(() => {
+         img.classList.remove('transitioning-src')
+      }, transitionStart);
+
+      img.style.backgroundImage = `url("./public/images/ (${3*n+1}).jpg")`
+      
+      setTimeout(() => {
+         img.classList.add('transitioning-src')
+      }, transitionEnd);
+   });
+   [image_31,image_32,image_33].forEach(img=>{
+      
+      setTimeout(() => {
+         img.classList.remove('transitioning-src')
+      }, transitionStart);
+
+      img.style.backgroundImage = `url("./public/images/ (${3*n+2}).jpg")`
+      
+      setTimeout(() => {
+         img.classList.add('transitioning-src')
+      }, transitionEnd);
+   });
+   n++
+
+}, transitionDuration);

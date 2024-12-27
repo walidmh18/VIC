@@ -102,3 +102,61 @@ ScrollReveal().reveal('#vision p',{reset:true,origin:'bottom',distance:'4em',opa
 
 
 // ScrollReveal().reveal('#cta',{reset:true,origin:'bottom',distance:'4em',opacity:0});
+
+
+
+
+let image_1 = document.querySelector('#tsawer .left .imageContainer')
+let image_2 = document.querySelector('#tsawer .right .imageContainer')
+
+
+
+// image_11.style.backgroundImage = 'lkajsdlf'
+
+let n = 2;
+const transitionDuration = 7000
+const transitionStart = 200
+const transitionEnd = transitionDuration - transitionStart;
+
+[image_1,image_2].forEach(img=>{
+
+   setTimeout(() => {
+      img.classList.add('transitioning-src')
+   }, transitionEnd);
+})
+
+setInterval(() => {
+   // console.log(image_11);
+   if (2*n>=47) {
+      n=1
+   }
+   
+   [image_1].forEach(img=>{
+      
+      setTimeout(() => {
+         img.classList.remove('transitioning-src')
+      }, transitionStart);
+
+      img.style.backgroundImage = `url("../public/images/ (${47 - 2*n}).jpg")`
+      
+      setTimeout(() => {
+         img.classList.add('transitioning-src')
+      }, transitionEnd);
+   });
+   
+   [image_2].forEach(img=>{
+      
+      setTimeout(() => {
+         img.classList.remove('transitioning-src')
+      }, transitionStart);
+
+      img.style.backgroundImage = `url("../public/images/ (${47 - 2*n+1}).jpg")`
+      
+      setTimeout(() => {
+         img.classList.add('transitioning-src')
+      }, transitionEnd);
+   });
+
+   n++
+
+}, transitionDuration);

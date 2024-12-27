@@ -14,12 +14,13 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.1/lottie.min.js" integrity="sha512-H6aKTjvYAazW0iNuGj1f2dZvSWlt1HGZGEDsXRPETo2IB4H6v36Vl2qiZNlCRxOp0kT7iBf+7USNPavNscZGAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
    <script src="https://unpkg.com/scrollreveal"></script>
+<link rel="shortcut icon" href="../public/header-logo.svg" type="image/x-icon">
+
 
 
 </head>
 
 <body>
-
    <header id="header-desk-dynamic">
       <a href="../"><img src="../public/header-logo.svg" alt=""></a>
 
@@ -30,7 +31,7 @@
          <a href="../events">events</a>
          <a href="../contact">contact us</a>
       </nav>
-      <button>explore more</button>
+      <div></div>
    </header>
    <header id="header-desk-fix">
       <a href="../"><img src="../public/header-logo.svg" alt=""></a>
@@ -42,7 +43,7 @@
          <a href="../events">events</a>
          <a href="../contact">contact us</a>
       </nav>
-      <button>explore more</button>
+      <div></div>
    </header>
 
    <header id="header-mob-fix" class="">
@@ -58,7 +59,7 @@
          <a href="../comunity">comunity</a>
          <a href="../events">events</a>
          <a href="../contact">contact us</a>
-         <button>explore more</button>
+         <div></div>
       </nav>
    </header>
 
@@ -76,7 +77,7 @@
          <a href="../comunity">comunity</a>
          <a href="../events">events</a>
          <a href="../contact">contact us</a>
-         <button>explore more</button>
+         <div></div>
       </nav>
    </header>
 
@@ -97,11 +98,12 @@
 
    <section id="tsawer">
       <div class="left">
-         <img src="../public/home1.jpg" alt="">
+      <div class="imageContainer" style="background-image: url('../public/images/ (1).jpg');"><div></div></div>
       </div>
 
       <div class="right">
-         <img src="../public/home1.jpg" alt="">
+      <div class="imageContainer" style="background-image: url('../public/images/ (2).jpg');"><div></div></div>
+
       </div>
    </section>
 
@@ -119,43 +121,8 @@ include'../footer.php';
 
    </div>
    
+   <?php include '../loader.php' ?>
 
-   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
-   <script>
-      const lenis = new Lenis({
-         duration: 0.6,
-         easing: (t) => Math.min(1, 1.000001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-         direction: 'vertical', // vertical, horizontal
-         gestureDirection: 'vertical', // vertical, horizontal, both
-         smooth: true,
-         mouseMultiplier: 1,
-         smoothTouch: false,
-         touchMultiplier: 1,
-         infinite: false,
-      })
-      //get scroll value
-      lenis.on('scroll', ({
-         scroll,
-         limit,
-         velocity,
-         direction,
-         progress
-      }) => {
-         console.log({
-            scroll,
-            limit,
-            velocity,
-            direction,
-            progress
-         })
-      })
-
-      function raf(time) {
-         lenis.raf(time)
-         requestAnimationFrame(raf)
-      }
-      requestAnimationFrame(raf)
-   </script>
 </body>
 
 </html>

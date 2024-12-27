@@ -115,13 +115,15 @@ a.contactBtn:hover{
 
 #tsawer .right{
    transform: translate(-3em, -3em);
+   width: 100%;
 }
 
 
 #tsawer .left{
    transform: translate(3em,3em);
+   width: 100%;
 }
-#tsawer img{
+#tsawer .imageContainer{
    width: 100%;
    border-radius: 1em;
    aspect-ratio: 5/4;
@@ -216,7 +218,7 @@ a.contactBtn:hover{
    }
    #tsawer div{
       max-width: 50vw;
-      scale: 1.5;
+      scale: 1.2;
    }
 
    #vision p{

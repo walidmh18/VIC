@@ -14,6 +14,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.1/lottie.min.js" integrity="sha512-H6aKTjvYAazW0iNuGj1f2dZvSWlt1HGZGEDsXRPETo2IB4H6v36Vl2qiZNlCRxOp0kT7iBf+7USNPavNscZGAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+   <link rel="shortcut icon" href="../public/header-logo.svg" type="image/x-icon">
 
 
 </head>
@@ -45,6 +46,8 @@ let animation = lottie.loadAnimation({
    path: '../public/404/animation.json' // the path to the animation json
 });
  </script>
+
+ <?php include '../loader.php' ?>
 </body>
 
 </html>

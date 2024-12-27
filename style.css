@@ -155,14 +155,14 @@ header a:not(:has(img))::after {
    transition: 0.3s cubic-bezier(0, .82, .55, 1.01);
 }
 
-header a.active::after,
-header a:hover::after {
+header a:not(.expBtn).active::after,
+header a:not(.expBtn):hover::after {
    width: 110%;
 
 }
 
 
-header button {
+.expBtn{
    padding: 0.5em 1em;
    border: 1px solid var(--b);
    color: var(--b);
@@ -170,7 +170,7 @@ header button {
    transition: 0.3s cubic-bezier(0, .82, .55, 1.01);
 }
 
-header button:hover {
+.expBtn:hover{
    background: var(--b);
    color: var(--bg);
 }
@@ -275,7 +275,8 @@ header img {
    align-items: center;
    gap: 6em;
    font-size: 1.2em;
-   margin: 20vh auto;
+   padding: 20vh 0;
+   margin: 0 auto;
 
 }
 
@@ -302,9 +303,45 @@ header img {
 
 }
 
-.left .imagesContainer .leftImage img {
+
+.imageContainer {
+   background-size: cover;
+   background-position: center;
+   transition: 0.1s;
+   opacity: 1;
+   resize: horizontal;
+   overflow: auto;
+   box-sizing: border-box;
+   
+}
+
+.imageContainer div{
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   background: none;
+}
+
+.imageContainer.transitioning-src {
+
+   animation: opacity-images 0.5s ease-out;
+}
+
+@keyframes opacity-images {
+   0%{
+      opacity: 1;
+   }
+   50%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+.left .imagesContainer .leftImage .imageContainer {
    aspect-ratio: 4/6;
-   max-width: min(20vw, 290px);
+   padding-bottom: 66%;
+   width: min(20vw, 290px);
 }
 
 .left .imagesContainer .rightImages {
@@ -313,14 +350,14 @@ header img {
    gap: 2em;
 }
 
-.left .imagesContainer .rightImages img {
-   aspect-ratio: 1/1;
-   max-width: min(20vw, 290px);
+.left .imagesContainer .rightImages .imageContainer {
+   padding-bottom: 100%;
+   width: min(20vw, 290px);
 }
 
 
-.left .imagesContainer img {
-   max-width: 300px;
+.left .imagesContainer .imageContainer {
+   width: 300px;
    object-fit: cover;
    border-radius: 1em;
 }
@@ -635,16 +672,23 @@ footer .bottom {
 
    .left.leftTab .imagesContainer {
       gap: 1em;
-
+      
+   }
+   
+  
+   .left.leftTab .imageContainer {
    }
 
-
-   .left.leftTab img:is(:first-child, :last-child) {
+   .left.leftTab .imageContainer:is(:first-child, :last-child) {
       width: 25vw;
+      padding-bottom: 23%;
+
    }
 
-   .left.leftTab img:is(:not(:first-child, :last-child)) {
+   .left.leftTab .imageContainer:is(:not(:first-child, :last-child)) {
       width: 35vw;
+      padding-bottom: 33%;
+
    }
 
    .faqContainer {
@@ -713,7 +757,7 @@ footer .bottom {
 
    }
 
-   .left .imagesContainer img {
+   .left .imagesContainer .imageContainer {
       border-radius: 0.5em;
    }
 
@@ -915,9 +959,9 @@ footer .bottom {
       justify-content: center;
    }
 
-   #description-mob .left .imagesContainer .rightImages img,
-   #description-mob .left .imagesContainer .leftImage img {
-      max-width: 40vw;
+   #description-mob .left .imagesContainer .rightImages .imageContainer,
+   #description-mob .left .imagesContainer .leftImage .imageContainer {
+      width: 40vw;
    }
 
 

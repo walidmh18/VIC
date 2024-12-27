@@ -15,6 +15,7 @@
 
    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 
+   <link rel="shortcut icon" href="../public/header-logo.svg" type="image/x-icon">
 
 </head>
 
