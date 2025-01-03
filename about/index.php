@@ -27,7 +27,7 @@
       <nav>
          <a href="../" >home</a>
          <a href="#" class="active">about</a>
-         <a href="../comunity">comunity</a>
+         <a href="../community">community</a>
          <a href="../events">events</a>
          <a href="../contact">contact us</a>
       </nav>
@@ -39,7 +39,7 @@
       <nav>
          <a href="../" >home</a>
          <a href="#" class="active">about</a>
-         <a href="../comunity">comunity</a>
+         <a href="../community">community</a>
          <a href="../events">events</a>
          <a href="../contact">contact us</a>
       </nav>
@@ -56,7 +56,7 @@
       <nav>
          <a href="../">home</a>
          <a href="#"  class="active">about</a>
-         <a href="../comunity">comunity</a>
+         <a href="../community">community</a>
          <a href="../events">events</a>
          <a href="../contact">contact us</a>
          <div></div>
@@ -74,7 +74,7 @@
       <nav>
          <a href="../" >home</a>
          <a href="#" class="active">about</a>
-         <a href="../comunity">comunity</a>
+         <a href="../community">community</a>
          <a href="../events">events</a>
          <a href="../contact">contact us</a>
          <div></div>

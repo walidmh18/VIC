@@ -37,7 +37,7 @@
       <nav>
          <a href="#" class="active">home</a>
          <a href="./about">about</a>
-         <a href="./comunity">comunity</a>
+         <a href="./community">community</a>
          <a href="./events">events</a>
          <a href="./contact">contact us</a>
       </nav>
@@ -49,7 +49,7 @@
       <nav>
          <a href="#" class="active">home</a>
          <a href="./about">about</a>
-         <a href="./comunity">comunity</a>
+         <a href="./community">community</a>
          <a href="./events">events</a>
          <a href="./contact">contact us</a>
       </nav>
@@ -66,7 +66,7 @@
       <nav>
          <a href="#" class="active">home</a>
          <a href="./about">about</a>
-         <a href="./comunity">comunity</a>
+         <a href="./community">community</a>
          <a href="./events">events</a>
          <a href="./contact">contact us</a>
          <a href="#description-mob" class="expBtn">explore more</a>
@@ -84,7 +84,7 @@
       <nav>
          <a href="#" class="active">home</a>
          <a href="./about">about</a>
-         <a href="./comunity">comunity</a>
+         <a href="./community">community</a>
          <a href="./events">events</a>
          <a href="./contact">contact us</a>
          <a href="#description-mob" class="expBtn">explore more</a>
@@ -286,8 +286,8 @@
    </section>
 
    <section id="cta">
-      <h3>Les's create something awesome!</h3>
-      <a href="./" class="ctaBtn">Join us <i class="fa-solid fa-arrow-right"></i></a>
+      <h3>Let's create something awesome!</h3>
+      <a href="https://www.instagram.com/vic.enp/" class="ctaBtn">Join us <i class="fa-solid fa-arrow-right"></i></a>
    </section>
 
 
@@ -337,8 +337,8 @@
             <div class="tag"><img src="./public/Sponsors/SVG/Winsdor.svg" alt="Winsdor"></div>
 
          </div>
+         <div class="fade"></div>
       </div>
-      <div class="fade"></div>
    </section>
 
 
@@ -356,9 +356,9 @@
          <div class="right">
             <a href="./about">About us</a>
             <div>
-               <a href="./comunity">Community</a>
-               <a href="./comunity/members">members</a>
-               <a href="./comunity/testimonials">Testimonials</a>
+               <a href="./community">Community</a>
+               <a href="./community/members">members</a>
+               <a href="./community/testimonials">Testimonials</a>
             </div>
             <a href="./events">Events</a>
             <a href="./contact">Contact Us</a>
